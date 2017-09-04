@@ -14,7 +14,7 @@ import android.widget.TextView;
  * 基础TextView
  */
 
-public class BaseTextView extends LinearLayout {
+public class BaseTextView extends AutoLinearLayout {
 
     private Context mContext;
 
