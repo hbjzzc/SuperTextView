@@ -18,6 +18,8 @@ import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import com.zhy.autolayout.AutoRelativeLayout;
+
 /**
  * Created by Allen on 2017/7/1.
  * <p>
