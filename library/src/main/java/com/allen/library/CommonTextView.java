@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.text.InputFilter;
-import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -12,6 +11,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.zhy.autolayout.AutoRelativeLayout;
 
 /**
  * Created by allen on 2016/11/21.
@@ -170,11 +171,11 @@ public class CommonTextView extends AutoRelativeLayout {
     private boolean mRightViewIsClickable = false;
 
 
-    private RelativeLayout.LayoutParams leftTVParams, centerTVParams, rightTVParams, topLineParams, bottomLineParams;
-    private RelativeLayout.LayoutParams leftTopTVParams, centerTopTVParams, rightTopTVParams;
-    private RelativeLayout.LayoutParams leftBottomTVParams, centerBottomTVParams, rightBottomTVParams;
-    private RelativeLayout.LayoutParams centerBaseLineParams;
-    private RelativeLayout.LayoutParams leftIVParams;
+    private AutoRelativeLayout.LayoutParams leftTVParams, centerTVParams, rightTVParams, topLineParams, bottomLineParams;
+    private AutoRelativeLayout.LayoutParams leftTopTVParams, centerTopTVParams, rightTopTVParams;
+    private AutoRelativeLayout.LayoutParams leftBottomTVParams, centerBottomTVParams, rightBottomTVParams;
+    private AutoRelativeLayout.LayoutParams centerBaseLineParams;
+    private AutoRelativeLayout.LayoutParams leftIVParams;
 //    private RelativeLayout.LayoutParams rightIVParams;
 
     private OnCommonTextViewClickListener onCommonTextViewClickListener;
@@ -805,7 +806,7 @@ public class CommonTextView extends AutoRelativeLayout {
             textView.setSingleLine(mSetSingleLine);
 //            textView.setMaxEms(mSetMaxEms);
 //            textView.setEllipsize(TextUtils.TruncateAt.END);
-            textView.setFilters(new InputFilter[]{new InputFilter.LengthFilter(mSetMaxEms) });
+            textView.setFilters(new InputFilter[]{new InputFilter.LengthFilter(mSetMaxEms)});
             addView(textView);
         }
         return textView;
