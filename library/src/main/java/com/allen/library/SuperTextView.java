@@ -24,7 +24,7 @@ import android.widget.TextView;
  * 打造万能的布局满足市面常见的样式
  */
 
-public class SuperTextView extends RelativeLayout {
+public class SuperTextView extends AutoRelativeLayout {
 
     private Context mContext;
 
