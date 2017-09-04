@@ -19,7 +19,7 @@ import android.widget.TextView;
  * 通用的textView可以实现大部分常用布局样式
  */
 
-public class CommonTextView extends RelativeLayout {
+public class CommonTextView extends AutoRelativeLayout {
 
     private Context mContext;
 
